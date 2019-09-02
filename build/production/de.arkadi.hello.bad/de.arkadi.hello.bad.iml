@@ -7,7 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="de.arkadi.hello.bad" />
-    <orderEntry type="module" module-name="de.arkadi.hello.good" />
   </component>
 </module>

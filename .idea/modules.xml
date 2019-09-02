@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,6 +1,6 @@
 package de.arkadi.hello.good;
 
-public class Printer {
+public class GoodDog {
     public String getDog(){
         return "good dog";
     }

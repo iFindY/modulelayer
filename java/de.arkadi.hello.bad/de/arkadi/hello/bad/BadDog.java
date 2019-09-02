@@ -1,6 +1,6 @@
 package de.arkadi.hello.bad;
 
-public class Printer {
+public class BadDog {
     public String getDog() {
         return "bad dog";
     }

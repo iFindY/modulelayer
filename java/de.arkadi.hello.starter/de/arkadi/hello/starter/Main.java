@@ -23,7 +23,7 @@ public class Main {
     private static ModuleLayer createApplicationLayers() {
 
         Path mods = Paths.get("out/libs");
-        Path url = mods.toAbsolutePath();
+
         ModuleLayer good = createLayer(
                 List.of(ModuleLayer.boot()),
                 mods.resolve("good"),
@@ -44,9 +44,12 @@ public class Main {
 
         Configuration configuration = createConfiguration(parentLayers, modulePath, rootModule);
 
-        return ModuleLayer
+        ModuleLayer ml = ModuleLayer
                 .defineModulesWithOneLoader(configuration, parentLayers, ClassLoader.getSystemClassLoader())
                 .layer();
+
+        ml.modules().forEach(System.out::println);
+        return ml;
     }
 
     private static Configuration createConfiguration(List<ModuleLayer> parentLayers, Path modulePath, String rootModule) {
@@ -55,7 +58,7 @@ public class Main {
                 .map(ModuleLayer::configuration)
                 .collect(Collectors.toList());
 
-        return Configuration.resolveAndBind(ModuleFinder.of(),
+        return Configuration.resolve(ModuleFinder.of(),
                 configurations,
                 ModuleFinder.of(modulePath),
                 List.of(rootModule)

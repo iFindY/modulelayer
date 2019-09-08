@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.database/de.arkadi.hello.database.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.database/de.arkadi.hello.database.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.starter/de.arkadi.hello.starter.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.starter/de.arkadi.hello.starter.iml" />
     </modules>

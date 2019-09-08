@@ -1,4 +1,4 @@
 module de.arkadi.hello.good {
-    requires transitive gson;
+    requires gson;
     exports de.arkadi.hello.good;
 }

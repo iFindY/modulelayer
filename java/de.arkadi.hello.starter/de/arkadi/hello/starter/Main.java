@@ -44,11 +44,11 @@ public class Main {
 
         Configuration configuration = createConfiguration(parentLayers, modulePath, rootModule);
 
+
         ModuleLayer ml = ModuleLayer
                 .defineModulesWithOneLoader(configuration, parentLayers, ClassLoader.getSystemClassLoader())
                 .layer();
 
-        ml.modules().forEach(System.out::println);
         return ml;
     }
 
@@ -58,9 +58,10 @@ public class Main {
                 .map(ModuleLayer::configuration)
                 .collect(Collectors.toList());
 
+
         return Configuration.resolve(ModuleFinder.of(),
                 configurations,
-                ModuleFinder.of(modulePath),
+                ModuleFinder.of(modulePath,Path.of("libs")),
                 List.of(rootModule)
         );
     }

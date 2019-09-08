@@ -20,3 +20,6 @@ for i in "${modules[@]}"; do
     --file out/libs/"$i"/de.arkadi.hello."$i".jar \
     -C out/modules/de.arkadi.hello."$i"/ .
 done
+
+
+cp out/libs/database/* libs/

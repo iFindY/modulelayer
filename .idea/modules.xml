@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.database/de.arkadi.hello.database.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.database/de.arkadi.hello.database.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.starter/de.arkadi.hello.starter.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.starter/de.arkadi.hello.starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.bad/de.arkadi.hello.bad.iml" group="de/arkadi/hello" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.caller/de.arkadi.hello.caller.iml" group="de/arkadi/hello" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.database/de.arkadi.hello.database.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.database/de.arkadi.hello.database.iml" group="de/arkadi/hello" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.good/de.arkadi.hello.good.iml" group="de/arkadi/hello" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.provider/de.arkadi.hello.provider.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.provider/de.arkadi.hello.provider.iml" group="de/arkadi/hello" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.serviceinterface/de.arkadi.hello.serviceinterface.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.serviceinterface/de.arkadi.hello.serviceinterface.iml" group="de/arkadi/hello" />
+      <module fileurl="file://$PROJECT_DIR$/java/de.arkadi.hello.starter/de.arkadi.hello.starter.iml" filepath="$PROJECT_DIR$/java/de.arkadi.hello.starter/de.arkadi.hello.starter.iml" group="de/arkadi/hello" />
     </modules>
   </component>
 </project>

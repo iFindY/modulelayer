@@ -8,6 +8,6 @@ public class Provider implements ServiceInterface {
 
     @Override
     public String getName() {
-        return "Arkadi";
+        return "iProvide a service";
     }
 }

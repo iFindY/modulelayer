@@ -28,6 +28,7 @@ public class Caller {
         System.out.println("==============");
         ServiceLoader<ServiceInterface> plugins = ServiceLoader.load(l, ServiceInterface.class);
         System.out.println(plugins.findFirst().get().getName());
+        System.out.println("from: " + plugins.findFirst().get().getClass().getModule().getName());
 
     }
 }

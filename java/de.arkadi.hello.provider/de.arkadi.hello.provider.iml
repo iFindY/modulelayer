@@ -2,11 +2,12 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../de.arkadi.hello.provider">
-      <sourceFolder url="file://$MODULE_DIR$/../de.arkadi.hello.provider" isTestSource="false" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="de.arkadi.hello.serviceinterface" />
+    <orderEntry type="module" module-name="de.arkadi.hello.good" />
   </component>
 </module>

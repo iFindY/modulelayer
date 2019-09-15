@@ -33,7 +33,7 @@ public class Caller {
         System.out.println("Entry Point " + ModuleLayer.boot()
                 .findModule("de.arkadi.hello.starter").get().getDescriptor().mainClass().get());
         System.out.println("==============");
-        System.out.println("Plugin Loacation: " + ModuleLayer.boot().configuration().findModule("de.arkadi.hello.starter")
+        System.out.println("Plugin Location: " + ModuleLayer.boot().configuration().findModule("de.arkadi.hello.starter")
                 .get().reference().location());
 
 

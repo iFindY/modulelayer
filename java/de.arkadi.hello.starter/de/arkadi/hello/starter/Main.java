@@ -6,19 +6,17 @@ import java.lang.reflect.InvocationTargetException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Main {
     public static List<ModuleLayer> layers;
 
     public static void main(String[] args) throws ReflectiveOperationException {
-       new Main();
+        new Main();
     }
 
-    public Main() throws ClassNotFoundException,
-            NoSuchMethodException,
-            InvocationTargetException,
-            IllegalAccessException {
+    public Main() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
         layers = createApplicationLayers();
 
@@ -70,12 +68,11 @@ public class Main {
 
         Configuration configuration = createConfiguration(parentLayers, modulePath, rootModule);
 
-
-        ModuleLayer ml = ModuleLayer
+        ModuleLayer layer = ModuleLayer
                 .defineModulesWithOneLoader(configuration, parentLayers, ClassLoader.getSystemClassLoader())
                 .layer();
 
-        return ml;
+        return layer;
     }
 
     private static Configuration createConfiguration(List<ModuleLayer> parentLayers, Path modulePath, String rootModule) {
@@ -84,11 +81,11 @@ public class Main {
                 .map(ModuleLayer::configuration)
                 .collect(Collectors.toList());
 
-
-        return Configuration.resolve(ModuleFinder.of(),
+        Configuration configuration = Configuration.resolve(ModuleFinder.of(),
                 configurations,
                 ModuleFinder.of(modulePath, Path.of("libs")),
-                List.of(rootModule)
-        );
+                List.of(rootModule));
+        return configuration;
     }
+
 }

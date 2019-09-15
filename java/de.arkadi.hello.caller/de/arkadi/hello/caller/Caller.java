@@ -29,6 +29,13 @@ public class Caller {
         ServiceLoader<ServiceInterface> plugins = ServiceLoader.load(l, ServiceInterface.class);
         System.out.println(plugins.findFirst().get().getName());
         System.out.println("from: " + plugins.findFirst().get().getClass().getModule().getName());
+        System.out.println("==============");
+        System.out.println("Entry Point " + ModuleLayer.boot()
+                .findModule("de.arkadi.hello.starter").get().getDescriptor().mainClass().get());
+        System.out.println("==============");
+        System.out.println("Plugin Loacation: " + ModuleLayer.boot().configuration().findModule("de.arkadi.hello.starter")
+                .get().reference().location());
+
 
     }
 }

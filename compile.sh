@@ -21,5 +21,7 @@ for i in "${modules[@]}"; do
     -C out/modules/de.arkadi.hello."$i"/ .
 done
 
+jar  --create --file out/libs/starter/de.arkadi.hello.starter.jar --main-class de.arkadi.hello.starter.Main -C out/modules/de.arkadi.hello.starter/ .
+
 # test deps on db module
 cp out/libs/database/* libs/

@@ -19,24 +19,28 @@ public class Caller {
     }
 
     public void printIt(ModuleLayer l) {
-        System.out.println("==============");
+        System.out.println("======Modules of Good Layer========");
         GoodDog good = new GoodDog();
-        System.out.println("=======" + good.getDog() + " ready=======");
+        System.out.println("=======" + good.getDog() + " loaded=======\n");
+
+        System.out.println("======Modules of Bad Layer========");
         BadDog bad = new BadDog();
-        System.out.println("=======" + bad.getDog() + " ready=======");
+        System.out.println("=======" + bad.getDog() + " loaded=======\n");
+
+        System.out.println("======Modules of this Layer========");
         this.getClass().getModule().getLayer().modules().stream().forEach(System.out::println);
-        System.out.println("==============");
+
+        System.out.println("\n======Provider for service found========");
         ServiceLoader<ServiceInterface> plugins = ServiceLoader.load(l, ServiceInterface.class);
         System.out.println(plugins.findFirst().get().getName());
-        System.out.println("from: " + plugins.findFirst().get().getClass().getModule().getName());
-        System.out.println("==============");
-        System.out.println("Entry Point " + ModuleLayer.boot()
-                .findModule("de.arkadi.hello.starter").get().getDescriptor().mainClass().get());
-        System.out.println("==============");
-        System.out.println("Plugin Location: " + ModuleLayer.boot().configuration().findModule("de.arkadi.hello.starter")
+        System.out.println("======Provider module name========");
+        System.out.println(plugins.findFirst().get().getClass().getModule().getName());
+
+        System.out.println("\n======Entry Point========");
+        System.out.println(ModuleLayer.boot().findModule("de.arkadi.hello.starter").get().getDescriptor().mainClass().get());
+        System.out.println("=======Location of entry point module=======");
+        System.out.println(ModuleLayer.boot().configuration().findModule("de.arkadi.hello.starter")
                 .get().reference().location());
-
-
     }
 }
 

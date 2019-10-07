@@ -1,0 +1,2 @@
+- to build project use *compile.sh*
+- to build and run project use *start.sh* 

@@ -8,6 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="de.arkadi.hello.serviceinterface" />
-    <orderEntry type="module" module-name="de.arkadi.hello.good" />
+    <orderEntry type="module" module-name="de.arkadi.hello.left" />
   </component>
 </module>

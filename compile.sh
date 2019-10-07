@@ -7,13 +7,13 @@ javac -d out/modules \
   --module-source-path java $(find java -name "*.java") -Xlint
 
 # create dir
-mkdir -p out/libs/{good,bad,caller,starter,database,provider,serviceinterface}
+mkdir -p out/libs/{left,right,ui,starter,database,provider,serviceinterface}
 
 # copy libs
-find out/libs/good out/libs/bad -type d -exec cp libs/gson-2.8.5.jar {} \;
+find out/libs/left out/libs/right -type d -exec cp libs/gson-2.8.5.jar {} \;
 
 # create jars
-modules=(good bad caller starter database provider serviceinterface)
+modules=(left right ui starter database provider serviceinterface)
 for i in "${modules[@]}"; do
   jar \
     --create \

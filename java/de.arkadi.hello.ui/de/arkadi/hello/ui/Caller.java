@@ -1,7 +1,7 @@
-package de.arkadi.hello.caller;
+package de.arkadi.hello.ui;
 
-import de.arkadi.hello.bad.BadDog;
-import de.arkadi.hello.good.GoodDog;
+import de.arkadi.hello.right.BadDog;
+import de.arkadi.hello.left.GoodDog;
 import de.arkadi.hello.serviceinterface.ServiceInterface;
 import de.arkadi.hello.starter.Main;
 
@@ -19,18 +19,18 @@ public class Caller {
     }
 
     public void printIt(ModuleLayer l) {
-        System.out.println("======Modules of Good Layer========");
+        System.out.println("======Modules of Left Layer========");
         GoodDog good = new GoodDog();
         System.out.println("=======" + good.getDog() + " loaded=======\n");
 
-        System.out.println("======Modules of Bad Layer========");
+        System.out.println("======Modules of Right Layer========");
         BadDog bad = new BadDog();
         System.out.println("=======" + bad.getDog() + " loaded=======\n");
 
         System.out.println("======Modules of this Layer========");
         this.getClass().getModule().getLayer().modules().stream().forEach(System.out::println);
 
-        System.out.println("\n======Provider for service found========");
+        System.out.println("\n======Provider for service========");
         ServiceLoader<ServiceInterface> plugins = ServiceLoader.load(l, ServiceInterface.class);
         System.out.println(plugins.findFirst().get().getName());
         System.out.println("======Provider module name========");

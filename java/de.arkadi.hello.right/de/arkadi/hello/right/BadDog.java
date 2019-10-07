@@ -1,4 +1,4 @@
-package de.arkadi.hello.bad;
+package de.arkadi.hello.right;
 
 //import com.fasterxml.jackson.core.JsonFactory;
 

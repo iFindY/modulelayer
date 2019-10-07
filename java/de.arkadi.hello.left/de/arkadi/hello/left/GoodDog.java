@@ -1,4 +1,4 @@
-package de.arkadi.hello.good;
+package de.arkadi.hello.left;
 
 //import com.google.gson.Gson;
 

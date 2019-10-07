@@ -12,7 +12,7 @@ public class DataBase {
         System.out.println("DataBaseLA: " + this.getClass().getModule().getLayer());
     }
 
-    String city[] = {"Hamburg", "Paris", "Moskau"};
+    String city[] = {"Hamburg", "Paris", "Moscow"};
 
     public String getCity() {
         Random random = new Random();

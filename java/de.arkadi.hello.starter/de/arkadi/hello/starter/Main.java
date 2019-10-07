@@ -20,8 +20,8 @@ public class Main {
 
         layers = createApplicationLayers();
 
-        layers.get(0).findLoader("de.arkadi.hello.caller")
-                .loadClass("de.arkadi.hello.caller.Caller")
+        layers.get(0).findLoader("de.arkadi.hello.ui")
+                .loadClass("de.arkadi.hello.ui.Caller")
                 .getMethod("main", String[].class)
                 .invoke(null, (Object) new String[0]);
     }
@@ -37,13 +37,13 @@ public class Main {
 
         ModuleLayer good = createLayer(
                 List.of(ModuleLayer.boot()),
-                mods.resolve("good"),
-                "de.arkadi.hello.good");
+                mods.resolve("left"),
+                "de.arkadi.hello.left");
 
         ModuleLayer bad = createLayer(
                 List.of(ModuleLayer.boot()),
-                mods.resolve("bad"),
-                "de.arkadi.hello.bad");
+                mods.resolve("right"),
+                "de.arkadi.hello.right");
 
         ModuleLayer iService = createLayer(
                 List.of(ModuleLayer.boot()),
@@ -52,8 +52,8 @@ public class Main {
 
         ModuleLayer iCaller = createLayer(
                 List.of(good, bad, iService),
-                mods.resolve("caller"),
-                "de.arkadi.hello.caller");
+                mods.resolve("ui"),
+                "de.arkadi.hello.ui");
 
         ModuleLayer iProvider = createLayer(
                 List.of(good, iService),

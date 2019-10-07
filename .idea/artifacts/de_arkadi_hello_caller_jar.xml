@@ -2,9 +2,9 @@
   <artifact type="jar" name="de.arkadi.hello.caller:jar">
     <output-path>$PROJECT_DIR$/build/artifacts/de_arkadi_hello_caller_jar</output-path>
     <root id="archive" name="de.arkadi.hello.caller.jar">
-      <element id="module-output" name="de.arkadi.hello.caller" />
-      <element id="module-output" name="de.arkadi.hello.bad" />
-      <element id="module-output" name="de.arkadi.hello.good" />
+      <element id="module-output" name="de.arkadi.hello.ui" />
+      <element id="module-output" name="de.arkadi.hello.right" />
+      <element id="module-output" name="de.arkadi.hello.left" />
     </root>
   </artifact>
 </component>
